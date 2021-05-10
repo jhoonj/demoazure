@@ -57,7 +57,7 @@ public class DemoAzureApplication implements CommandLineRunner {
 	
 	public void fluxMono() {
 		List<Persona> personas = new ArrayList<>();
-		personas.add(new Persona (1,"jhon",27));
+		personas.add(new Persona (1,"jhon",28));
 		personas.add(new Persona (2,"juan ",28));
 		personas.add(new Persona (3,"ana ",29));
 		Flux<Persona> fx = Flux.fromIterable(personas);
