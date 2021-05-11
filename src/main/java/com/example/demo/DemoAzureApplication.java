@@ -9,6 +9,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.azure.model.Persona;
+import com.example.operador.condicional.Condicional;
+import com.example.operador.error.ErrorOp;
+import com.example.operador.matematicos.Matematicos;
 
 import ch.qos.logback.classic.Logger;
 import reactor.core.publisher.Flux;
@@ -68,16 +71,53 @@ public class DemoAzureApplication implements CommandLineRunner {
 	
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("metodo reactor");
-		reactor();
-		// TODO Auto-generated method stub
-		System.out.println("metodo mono");
-		mono();
-		System.out.println("metodo flux");
-		flux();
-		System.out.println("metodo flux mono");
-		fluxMono();
+//		System.out.println("metodo reactor");
+//		reactor();
+//		// TODO Auto-generated method stub
+//		System.out.println("metodo mono");
+//		mono();
+//		System.out.println("metodo flux");
+//		flux();
+//		System.out.println("metodo flux mono");
+//		fluxMono();
+//		
+
+//		Creacion app = new Creacion();
+//		app.repeat();
 		
+//		Transformacion app = new Transformacion();
+//		System.out.println("metodo map");
+//		app.map();
+//		
+//		
+//		System.out.println("metodo do on next");
+//		app.doonnext();
+//		
+//		System.out.println("metodo do group by");
+//		app.groupby();
+//		
+		
+		//Filtrado app = new Filtrado();
+		//app.disticnt();
+		
+		//app.skip();
+		
+	//	Combinacion app = new Combinacion();
+	//	app.merge();
+		
+//		ErrorOp app = new ErrorOp();
+//		app.errorReturn();
+//		
+//		app.errorResume();
+		
+		//Condicional app = new Condicional();
+		//app.defaultIsEmpty();
+		//app.timeout();
+		
+		Matematicos app = new Matematicos();
+		app.promedio();
+		app.count();
+		app.minimo();
 		
 		
 	}
